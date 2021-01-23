@@ -205,13 +205,27 @@ button:hover {
 	width: 100%;
 }
 
-@media (min-width: 500px) {
-	header {
+@media (max-width: 500px) {
+	nav {
+		align-content: flex-start;
+		border: 1px solid black;
 	}
-
-	.title-container {
-	}
-
 	.artists-container {
+		border: 1px solid black;
+		color: orange;
+		/* padding: 40px; */
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+		margin-left: 60px;
+		height: 20%;
+	}
+	/* .artist {
+		flex-wrap: warp;
+	} */
+	.bio {
+		display: flex;
+		flex-wrap: wrap;
+		align-self: flex-start;
 	}
 }
